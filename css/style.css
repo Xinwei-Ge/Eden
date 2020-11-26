@@ -1,0 +1,19 @@
+
+
+body {
+    background: black;
+}
+
+.splash {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: #0B6623;
+    text-align: center;
+    font-size: 60px;
+    font-family: "EB Garamond";
+    letter-spacing: 10px;
+    font-weight: 100;
+
+}
