@@ -1,21 +1,70 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 
     <title>EDEN</title>
 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    
+
 </head>
 
 <body>
     <div class = "logo">
         <h1>EDEN</h1>
+        <h2>Spring 2021</h2>
     </div>
 
-    <form class="form" action="process.php" method="POST">
+
+
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-12">
+                    <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row register-form">
+                            <div class="col-md-12">
+                                <form method="post" autocomplete="off" name="google-sheet">
+                                    <!-- <div class="form-group">
+                                        <input type="text" name="Name" class="form-control" placeholder="Name *" value="" required=""/>
+                                    </div> -->
+                                    <div class="form-group">
+                                        <input type="text" name="Email" class="form-control" placeholder="Email *" value="" required=""/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyDsqQq8gDiB436r3KzlWvB6iN2EOhfaZtpOkC4uB9rFAERWxQ/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- <form class="form" action="process.php" method="POST">
         <div>
             <input type="email" name="contact[email]" id ="email" class="input-field" placeholder="Email Address">
         </div>
@@ -24,13 +73,7 @@
             <input type="submit" class="submit-button" value="submit">
         </span>
         
-    </form>
-
-    
-        <!-- <span class="input-button">
-            <input type="submit" class="btn password-page__signup-form__submit" value="Submit">
-          </span> -->
-    
+    </form> -->
 
 
 
