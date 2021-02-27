@@ -1,34 +1,78 @@
 
-
-body {
-    background: black;
+html, body {
+    background-color: black !important;
     margin: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
 }
 
 .logo h1{
     position: fixed;
     width: 100%;
-    height: 100%;
+    top: 45%;
+    left: 0;
+    padding-right: 0px;
     color: #0B6623;
     text-align: center;
     font-size: 120px;
     font-family: "EB Garamond";
-    letter-spacing: 10px;
+    letter-spacing: 0px;
     font-weight: 100;
     background-color: black;
-    padding-top: 200px;
+}
+
+hr {
+    overflow: visible;
+}
+
+.logo h2 {
+    position: fixed;
+    text-align: center;
+    color: white;
+    font-family: "EB Garamond";
+    bottom: 0;
+    width: 100%;
+    visibility: visible;
+    padding-right: 0px;
+}
+
+.logo p {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.container-register {
+    background-color: black;
+    position: fixed;
+    
+}
+
+.form-group {
+    visibility: hidden;
+    position: fixed;
+    width: 16.5%;
+    left: 41.65%;
 }
 
 
+#reveal-form{
+    bottom: 0;
+}
 
 
+.row {
+    position: relative;
+}
 
 .register .nav-tabs .nav-link:hover{
     border: none;
 }
 .text-align{
-    margin-top: -3%;
-    margin-bottom: -9%;
 
     padding: 10%;
     margin-left: 30%;
@@ -39,17 +83,9 @@ body {
 }
 .register-heading{
     margin-left: 21%;
-    margin-bottom: 10%;
     color: #e9ecef;
 }
 
-.register{
-    /* background: -webkit-linear-gradient(left, #055a4f, #00c6ff);
-    margin-top: 3%;
-    padding: 3%;
-    border-radius: 2.5rem; */
-    margin-top: 50%;
-}
 .btnSubmit
 {
     width: 50%;
@@ -61,5 +97,4 @@ body {
     cursor: pointer;
     margin-right: 6%;
     color: rgb(246, 246, 252);
-    margin-top: 4%;
 }
