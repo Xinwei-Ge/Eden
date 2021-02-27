@@ -59,6 +59,13 @@ hr {
     left: 41.65%;
 }
 
+@media screen and (max-width: 600px){
+    .form-group{
+        min-width: 70%;
+        left: 15%;
+    }
+}
+
 
 #reveal-form{
     bottom: 0;
