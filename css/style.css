@@ -13,7 +13,6 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
     height: auto;
 }
 
@@ -74,6 +73,15 @@ hr {
     .form-group{
         min-width: 70%;
         left: 15%;
+    }
+
+    #logo {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: auto;
+        width: 300px;
     }
 }
 
